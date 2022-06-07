@@ -1,0 +1,85 @@
+<style>
+    * {padding:0;margin:0;}
+</style>
+<svg width=100% height=100%>
+    <image id=bonhomme xlink:href="bonhomme.png" x=0 y=0 height=100px></image>
+    <image id=balle xlink:href="balle.jpg" x=0 y=0 height=80px></image>
+    <image id=panier xlink:href="panier.jpg" x=0 y=0 height=100px></image>
+</svg>
+<script>
+
+largeur = document.body.clientWidth
+hauteur = document.body.clientHeight
+
+G = -0.2
+ax = 0
+ay = 0
+vx = 0
+vy = 0
+x = 0
+y = hauteur - 100
+saute = false
+bx = 100
+by = 0
+bvx = 0
+bvy = 0
+bax = 0
+bay = -G
+ay = -G*3
+
+window.onkeydown = function(e) {
+    if(e.key === " ") {
+        if(y <= hauteur - 100) {
+            vy = -10
+        }
+    } else if(e.key === "ArrowLeft") {
+        vx = -5
+    } else if(e.key === "ArrowRight") {
+        vx = 5
+    }
+}
+
+window.onkeyup = function(e) {
+    if(e.key === "ArrowLeft") {
+        vx = 0
+    } else if(e.key === "ArrowRight") {
+        vx = 0
+    }
+}
+
+function animer() {
+    x += vx
+    y += vy
+    vx += ax
+    vy += ay
+    bx += bvx
+    by += bvy
+    bvx += bax
+    bvy += bay
+
+    if(vy>0 && y>=hauteur-100) {
+        vy = 0
+        y = hauteur-100
+    }
+    if(by>=hauteur-80) bvy = -bvy * 0.8
+    if(bvy>0 && by+80>=y && by<=y && bx+80>=x && bx<=x+40) {
+        bvy = -bvy
+        bvx = ((bx+40-x)/40-0.5)*5
+    }
+    if(bx+80>=largeur-100 && bx<=largeur && by>=200 && by<=200+100 && bvy>0) {
+        alert("GAGNÉ !")
+        location.reload()
+    }
+
+    document.getElementById("bonhomme").setAttribute("x", x)
+    document.getElementById("bonhomme").setAttribute("y", y)
+    document.getElementById("balle").setAttribute("x", bx)
+    document.getElementById("balle").setAttribute("y", by)
+    document.getElementById("panier").setAttribute("x", largeur-100)
+    document.getElementById("panier").setAttribute("y", 200)
+}
+
+setInterval(animer, 20)
+
+console.log(largeur, hauteur)
+</script>
