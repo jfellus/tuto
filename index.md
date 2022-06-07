@@ -1,4 +1,3 @@
-# Coder un jeu simple en 2D avec HTML et Javascript au collège
 
 Ce tuto te propose de coder à partir de zero un jeu simple dans un langage réellement utilisé par les développeurs de jeux vidéos et d'applications web. Si tu as déjà fait du Scratch, au collège par exemple, tu as appris à coder en reliant des briques "déjà faites". Dans la vraie vie, les developpeurs ne codent pas de cette manière : 
 * L'équipe de developpeurs choisit d'abord un ou plusieurs **langages de programmation**. Selon les appareils des utiilisateurs (PC, téléphone, console, borne d'arcade, distributeur de billets, etc) il y a des langages plus ou moins adaptés. Ici, on va utiliser **HTML/Javascript** qui sont 2 langages très utilisés pour le web et les jeux en ligne ou sur téléphone, car un même code va fonctionner sur un PC, une tablette, un téléphone, sans changer une seule ligne de code.
