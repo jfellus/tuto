@@ -1,37 +1,5 @@
-## Welcome to GitHub Pages
+# Coder un jeu simple en 2D avec HTML et Javascript au collège
 
-You can use the [editor on GitHub](https://github.com/jfellus/tuto/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jfellus/tuto/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Ce tuto te propose de coder à partir de zero un jeu simple dans un langage réellement utilisé par les développeurs de jeux vidéos et d'applications web. Si tu as déjà fait du Scratch, au collège par exemple, tu as appris à coder en reliant des briques "déjà faites". Dans la vraie vie, les developpeurs ne codent pas de cette manière : 
+* L'équipe de developpeurs choisit d'abord un ou plusieurs langages de programmation. Selon les appareils des utiilisateurs (PC, téléphone, console, borne d'arcade, distributeur de billets, etc) il y a des langages plus ou moins adaptés. Ici, on va utiliser HTML/Javascript qui sont 2 langages très utilisés pour le web et les jeux sur téléphone, car un même code va fonctionner sur un PC, une tablette, un téléphone, sans changer une seule ligne de code.
+* Dans Scratch, beaucoup de choses ont déjà été codé à ta place et ton rôle en tant que developpeur est surtout de mettre bout à bout des fonctionnalités déjà codées par des "experts". Par exemple, si tu codes en Scratch un jeu où tu déplaces un requin, le requin sera déjà codé, et tu pourras directement utiliser des briques déjà codées qui déplacent le requin lorsque tu appuies sur les touches du clavier. Dans la vraie vie, toutes ces fonctionnalités doivent être écrites par les developpeurs à partir d'une "feuille blanche". On met donc plus de temps à obtenir un jeu très simple, mais on est aussi libres d'obtenir exactement ce que l'on veut !
